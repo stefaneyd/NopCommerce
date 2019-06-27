@@ -1792,9 +1792,11 @@ label, label + * {
 
 /*Custom style*/
 .overview .product-author {
-  /*margin: 0 0 25px;
-  line-height: 22px;*/
   color: #666;
+}
+.product-author-box {
+  margin-top: -20px;
+  margin-bottom: 5px;
 }
 
 .overview .short-description {

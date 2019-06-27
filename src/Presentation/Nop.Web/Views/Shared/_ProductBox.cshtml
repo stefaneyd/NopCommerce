@@ -32,6 +32,12 @@
         <h2 class="product-title">
             <a href="@Url.RouteUrl("Product", new {SeName = Model.SeName})">@Model.Name</a>
         </h2>
+        @if(!string.IsNullOrWhiteSpace(Model.Author))
+        {
+            <div class="product-author-box">
+                @string.Format(Html.Raw(T("product.author.stringformat")).ToString(), Model.Author)
+            </div>
+        }
         @if (catalogSettings.ShowSkuOnCatalogPages && !string.IsNullOrEmpty(Model.Sku))
         {
             <div class="sku">

@@ -36,7 +36,13 @@ namespace Nop.Web.Models.Catalog
         //price
         public ProductReviewOverviewModel ReviewOverviewModel { get; set; }
 
-		#region Nested Classes
+        #region Custom properties
+
+        public string Author { get; set; }
+
+        #endregion
+
+        #region Nested Classes
 
         public partial class ProductPriceModel : BaseNopModel
         {
