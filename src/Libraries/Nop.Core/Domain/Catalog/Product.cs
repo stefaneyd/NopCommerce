@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using Nop.Core.Domain.Discounts;
@@ -729,5 +729,11 @@ namespace Nop.Core.Domain.Catalog
             get => _productWarehouseInventory ?? (_productWarehouseInventory = new List<ProductWarehouseInventory>());
             protected set => _productWarehouseInventory = value;
         }
+
+        /// <summary>
+        /// Custom property
+        /// Gets or sets the value for Author when you have an eBook product
+        /// </summary>
+        public string Author { get; set; }
     }
 }

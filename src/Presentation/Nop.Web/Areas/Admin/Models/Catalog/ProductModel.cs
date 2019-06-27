@@ -466,6 +466,13 @@ namespace Nop.Web.Areas.Admin.Models.Catalog
         public ProductAttributeCombinationSearchModel ProductAttributeCombinationSearchModel { get; set; }
 
         #endregion
+
+        #region Custom Properties
+
+        [NopResourceDisplayName("Admin.Catalog.Products.Fields.Author")]
+        public string Author { get; set; }
+
+        #endregion
     }
 
     public partial class ProductLocalizedModel : ILocalizedLocaleModel
@@ -492,5 +499,12 @@ namespace Nop.Web.Areas.Admin.Models.Catalog
 
         [NopResourceDisplayName("Admin.Catalog.Products.Fields.SeName")]
         public string SeName { get; set; }
+
+        #region Custom Properties
+
+        [NopResourceDisplayName("Admin.Catalog.Products.Fields.Author")]
+        public string Author { get; set; }
+
+        #endregion
     }
 }

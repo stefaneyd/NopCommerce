@@ -18087,4 +18087,10 @@
   <LocaleResource Name="Wishlist.YourWishlistURL">
     <Value>Your wishlist URL for sharing</Value>
   </LocaleResource>
+  <LocaleResource Name="Admin.Catalog.Products.Fields.Author">
+    <Value>Author name</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Catalog.Products.Fields.Author.Hint">
+    <Value>The name of the author.</Value>
+  </LocaleResource>
 </Language>

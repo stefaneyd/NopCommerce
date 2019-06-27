@@ -20,6 +20,12 @@
         Html.AddCanonicalUrlParts(productUrl, seoSettings.QueryStringInCanonicalUrlsEnabled);
     }
 
+    // Custom head metatag for book author 
+    if(!string.IsNullOrWhiteSpace(Model.Author))
+    {
+        Html.AddHeadCustomParts("<meta property=\"book:author\" content=\"" + Html.Encode(Model.Author) + "\" />");
+    }
+
     //open graph META tags
     if (seoSettings.OpenGraphMetaTags)
     {
@@ -64,7 +70,14 @@
                             <h1 itemprop="name">
                                 @Model.Name
                             </h1>
+                            @if (!string.IsNullOrEmpty(Model.Author))
+                            {
+                            <div class="product-author">
+                                @String.Format(Html.Raw(T("Product.Author.StringFormat")).ToString(), Html.Raw(Model.Author))
+                            </div>
+                            }
                         </div>
+                        
                         @if (!string.IsNullOrEmpty(Model.ShortDescription))
                         {
                             <div class="short-description">

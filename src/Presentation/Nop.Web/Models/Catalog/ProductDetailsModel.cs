@@ -106,6 +106,12 @@ namespace Nop.Web.Models.Catalog
 
         public string CurrentStoreName { get; set; }
 
+        #region Custom properties
+
+        public string Author { get; set; }
+
+        #endregion
+
         #region Nested Classes
 
         public partial class ProductBreadcrumbModel : BaseNopModel

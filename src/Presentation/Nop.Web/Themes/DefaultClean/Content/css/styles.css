@@ -1,4 +1,4 @@
-
+short-description
 
 /*********** CSS RESET **********/
 
@@ -1789,6 +1789,14 @@ label, label + * {
 	font-size: 30px;
     font-weight: normal;
 }
+
+/*Custom style*/
+.overview .product-author {
+  /*margin: 0 0 25px;
+  line-height: 22px;*/
+  color: #666;
+}
+
 .overview .short-description {
 	margin: 0 0 25px;
 	line-height: 22px;
