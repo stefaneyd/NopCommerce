@@ -1,0 +1,11 @@
+﻿{
+  "Group": "Widgets",
+  "FriendlyName": "Custom Discounts",
+  "SystemName": "Widgets.CustomDiscounts",
+  "Version": "1.0",
+  "SupportedVersions": [ "4.30" ],
+  "Author": "Stefan Eydal",
+  "DisplayOrder": 1,
+  "FileName": "Nop.Plugin.Widgets.CustomDiscounts.dll",
+  "Description": "This plugin allows you to set customized discounts"
+}
