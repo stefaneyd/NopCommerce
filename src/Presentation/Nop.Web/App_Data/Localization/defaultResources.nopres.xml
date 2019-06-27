@@ -18093,4 +18093,7 @@
   <LocaleResource Name="Admin.Catalog.Products.Fields.Author.Hint">
     <Value>The name of the author.</Value>
   </LocaleResource>
+  <LocaleResource Name="product.author.stringformat">
+    <Value>by {0} (Author)</Value>
+  </LocaleResource>
 </Language>
