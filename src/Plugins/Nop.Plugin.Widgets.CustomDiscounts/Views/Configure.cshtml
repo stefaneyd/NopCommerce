@@ -1,0 +1,68 @@
+﻿@model Nop.Plugin.Widgets.CustomDiscounts.Models.ConfigurationModel
+@{
+    Layout = "_ConfigurePlugin";
+}
+
+@await Component.InvokeAsync("StoreScopeConfiguration")
+<form asp-controller="WidgetsCustomDiscounts" asp-action="Configure" method="post">
+    <div class="panel-group">
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                @T("Plugins.Widgets.CustomDiscounts.DiscountText")
+            </div>
+            <div class="panel-body">
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <nop-override-store-checkbox asp-for="DiscountText_OverrideForStore" asp-input="DiscountText" asp-store-scope="@Model.ActiveStoreScopeConfiguration" />
+                        <nop-label asp-for="DiscountText" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-editor asp-for="DiscountText" />
+                        <span asp-validation-for="DiscountText"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                @T("Plugins.Widgets.CustomDiscounts.Date")
+            </div>
+            <div class="panel-body">
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <nop-override-store-checkbox asp-for="From_OverrideForStore" asp-input="From" asp-store-scope="@Model.ActiveStoreScopeConfiguration" />
+                        <nop-label asp-for="From" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-editor asp-for="From" />
+                        <span asp-validation-for="From"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-body">
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <nop-override-store-checkbox asp-for="To_OverrideForStore" asp-input="To" asp-store-scope="@Model.ActiveStoreScopeConfiguration" />
+                        <nop-label asp-for="To" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-editor asp-for="To" />
+                        <span asp-validation-for="To"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <div class="form-group">
+                    <div class="col-md-9 col-md-offset-3">
+                        <input type="submit" name="save" class="btn bg-blue" value="@T("Admin.Common.Save")" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

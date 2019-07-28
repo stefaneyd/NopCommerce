@@ -7,5 +7,5 @@
   "Author": "Stefan Eydal",
   "DisplayOrder": 1,
   "FileName": "Nop.Plugin.Widgets.CustomDiscounts.dll",
-  "Description": "This plugin allows you to set customized discounts"
+  "Description": "This plugin allows you to set customized discount text on products detail page"
 }
